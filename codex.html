@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codex Shortcut Sheet</title>
-    <meta name="description" content="Codex를 작업 단위 중심으로 쓸 때 필요한 명령 패턴과 검증 루프를 A4 한 장으로 정리한 치트시트." />
+    <title>Codex Keyboard Shortcuts</title>
+    <meta name="description" content="Codex에서 빠르게 참고할 수 있게 최소 키 조작과 실행 패턴을 A4 한 장으로 정리한 출력용 시트." />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -23,8 +23,8 @@
     <main class="print-page-wrap container">
       <div class="print-toolbar screen-only">
         <div>
-          <h1>Codex 치트시트</h1>
-          <p class="footer-note">PC와 모바일에서 읽기 쉽고, A4 한 장으로 출력 가능한 참조표</p>
+          <h1>Codex Quick Sheet</h1>
+          <p class="footer-note">불필요한 설명 없이 실행/조작만 빠르게 보기 위한 A4 시트</p>
         </div>
         <div class="actions">
           <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
@@ -37,27 +37,30 @@
         <header class="page-header">
           <div>
             <span class="tool-chip codex">Codex</span>
-            <h2>Codex 치트시트</h2>
-            <p>자동완성보다 작업 단위와 검증 루프 중심으로 쓸 때 필요한 실행 패턴 압축판.</p>
+            <h2>Codex Quick Sheet</h2>
+            <p>키보드 조작 + 자주 쓰는 실행 패턴만 압축</p>
           </div>
-          <div class="small-note">v2 · color / mono toggle</div>
+          <div class="small-note">v3 · A4 one-page</div>
         </header>
 
         <section class="cheat-grid">
-          <section class="card"><h3>핵심 명령</h3><ul><li><span class="mono">codex exec "task"</span></li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">Ctrl+C</span> 중단</li><li>git repo 안에서 실행</li></ul></section>
-          <section class="card"><h3>작업 단위</h3><ul><li>입력 범위 명시</li><li>목표 명시</li><li>검증 기준 포함</li><li>출력 형식 지정</li></ul></section>
-          <section class="card"><h3>검증 루프</h3><ul><li><span class="mono">pytest</span></li><li><span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span></li><li><span class="mono">tsc --noEmit</span></li></ul></section>
-          <section class="card"><h3>잘 맞는 일</h3><ul><li>작은 리팩터링</li><li>테스트 실패 원인 찾기</li><li>diff 요약</li><li>PR 설명 초안</li></ul></section>
-          <section class="card"><h3>좋은 요청 예</h3><ul><li><span class="mono">auth.ts</span>와 <span class="mono">token.ts</span> 범위</li><li>401 원인 후보 3개 정리</li><li>재현 조건 포함</li><li>필요 시 수정 후보 제시</li></ul></section>
-          <section class="card"><h3>실패 시 규칙</h3><ul><li>테스트 실패 시 중단</li><li>변경 파일 요약</li><li>검증 결과 정리</li><li>남은 리스크 명시</li></ul></section>
-          <section class="card"><h3>피할 것</h3><ul><li>모호한 제품 설계 전체 위임</li><li>문맥만 길고 목표 없는 요청</li><li>검증 없이 결과 신뢰</li><li>너무 큰 작업 한 번에 넘기기</li></ul></section>
-          <section class="card"><h3>실전 팁</h3><ul><li>작업기처럼 쓰고 자동완성으로만 보지 않기</li><li>중간 확인 가능한 크기로 쪼개기</li><li>검증 가능한 일부터 맡기기</li></ul></section>
-          <section class="card"><h3>한 줄 요약</h3><ul><li>Codex는 작업 단위와 검증 루프가 붙을 때 가장 강함</li><li>프롬프트 길이보다 작업 설계가 중요</li></ul></section>
+          <section class="card"><h3>Core</h3><ul><li><span class="mono">Ctrl+C</span> stop current run</li><li><span class="mono">Enter</span> submit</li><li><span class="mono">↑ ↓</span> history / navigation</li><li><span class="mono">Tab</span> shell completion</li></ul></section>
+          <section class="card"><h3>One-shot</h3><ul><li><span class="mono">codex exec "task"</span></li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">codex exec --json "task"</span></li></ul></section>
+          <section class="card"><h3>Run Modes</h3><ul><li><span class="mono">--full-auto</span> auto-approve in workspace</li><li><span class="mono">--yolo</span> no sandbox / no approvals</li><li><span class="mono">exec</span> run then exit</li></ul></section>
+          <section class="card"><h3>Session</h3><ul><li><span class="mono">codex</span> interactive mode</li><li><span class="mono">Ctrl+C</span> interrupt turn</li><li>rerun with edited prompt if needed</li></ul></section>
+          <section class="card"><h3>Git / Repo</h3><ul><li>run inside trusted git repo</li><li><span class="mono">git init</span> for scratch dir</li><li>commit after validation</li></ul></section>
+          <section class="card"><h3>Validation</h3><ul><li><span class="mono">pytest</span></li><li><span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span></li><li><span class="mono">tsc --noEmit</span></li></ul></section>
+          <section class="card"><h3>Diff / Review</h3><ul><li><span class="mono">git diff</span> inspect changes</li><li><span class="mono">git status</span> changed files</li><li>review before commit</li></ul></section>
+          <section class="card"><h3>Good Inputs</h3><ul><li>scope</li><li>goal</li><li>validation</li><li>expected output</li></ul></section>
+          <section class="card"><h3>Avoid</h3><ul><li>huge vague tasks</li><li>no validation</li><li>blind commit / push</li></ul></section>
+          <section class="card"><h3>Quick Commands</h3><ul><li><span class="mono">codex exec "summarize diff"</span></li><li><span class="mono">codex exec "fix failing tests"</span></li><li><span class="mono">codex exec "draft PR summary"</span></li></ul></section>
+          <section class="card"><h3>Task Shape</h3><ul><li>small refactor</li><li>bug fix</li><li>log-based investigation</li><li>summary draft</li></ul></section>
+          <section class="card"><h3>One Line</h3><ul><li>Codex는 shortcut보다 실행 패턴과 검증 루프를 같이 보는 쪽이 실제 사용에 더 유리함</li></ul></section>
         </section>
 
         <footer class="page-footer">
-          <span>추천 용도: 버그 수정, 리팩터링, 요약, 검증 루프</span>
-          <span>작업 단위를 선명히 줄수록 결과 편차가 줄어듦</span>
+          <span>Codex quick execution sheet</span>
+          <span>Print on A4 portrait</span>
         </footer>
       </article>
     </main>
