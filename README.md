@@ -4,6 +4,7 @@ Claude Code, Codex, Gemini Code를 A4 한 장으로 출력해 옆에 둘 수 있
 
 ## 포함 페이지
 - `index.html`
+- `combined.html`
 - `claude-code.html`
 - `codex.html`
 - `gemini-code.html`

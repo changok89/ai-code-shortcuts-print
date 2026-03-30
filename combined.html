@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Shortcut Pack</title>
+    <meta name="description" content="Claude Code, Codex, Gemini Code 단축표를 한 번에 출력할 수 있는 통합 프린트 페이지." />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header container screen-only">
+      <div class="topbar">
+        <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
+        <nav class="nav">
+          <a href="./index.html">홈</a>
+          <a class="active" href="./combined.html">통합 출력</a>
+          <a href="./claude-code.html">Claude Code</a>
+          <a href="./codex.html">Codex</a>
+          <a href="./gemini-code.html">Gemini Code</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="print-page-wrap container">
+      <div class="print-toolbar screen-only">
+        <div>
+          <h1>통합 프린트 팩</h1>
+          <p class="footer-note">Claude Code / Codex / Gemini Code를 한 번에 인쇄할 수 있는 통합 페이지</p>
+        </div>
+        <div class="actions">
+          <button class="button primary" data-print aria-label="Print all shortcut sheets">전체 인쇄</button>
+          <a class="button secondary" href="./index.html">뒤로</a>
+        </div>
+      </div>
+
+      <article class="print-page" style="margin-bottom:20px;">
+        <header class="page-header">
+          <div>
+            <span class="tool-chip claude">Claude Code</span>
+            <h2>Claude Code 단축표</h2>
+            <p>작업 위임, 범위 지정, 문서 정리, 리팩터링 지시에 맞춘 한 장 요약표.</p>
+          </div>
+          <div class="small-note">v1 · A4 출력용</div>
+        </header>
+        <section class="card-grid">
+          <section class="card"><h3>핵심 단축</h3><ul><li><span class="mono">/help</span> 핵심 명령 보기</li><li><span class="mono">/clear</span> 현재 대화 문맥 정리</li><li><span class="mono">/status</span> 모델/세션 상태 확인</li><li><span class="mono">Ctrl+C</span> 실행 중단</li></ul></section>
+          <section class="card"><h3>자주 쓰는 명령 패턴</h3><ul><li><span class="mono">claude --print "task"</span></li><li><span class="mono">claude --permission-mode bypassPermissions --print "task"</span></li><li>구현 전 파일 범위와 완료 조건을 먼저 명시</li></ul></section>
+          <section class="card"><h3>작업 흐름 팁</h3><ul><li>작업 목표, 범위, 검증 기준을 3줄로 나눠 주기</li><li>문서/설명 초안은 먼저 받고 최종 마감은 사람이 검토</li><li>큰 작업은 기능 단위로 쪼개서 순차 실행</li></ul></section>
+          <section class="card"><h3>이럴 때 좋음</h3><ul><li>파일 범위가 비교적 명확한 구현</li><li>문서 초안, 리팩터링, 구조 정리</li><li>작업 위임과 결과 요약이 같이 필요한 경우</li></ul></section>
+          <section class="card"><h3>이렇게 쓰기</h3><ul><li>관련 파일 경로를 먼저 지정</li><li>테스트/검증 명령을 함께 넘기기</li><li>출력 형식을 지정해서 요약 받기</li></ul></section>
+          <section class="card"><h3>피할 것</h3><ul><li>"알아서 다 해줘" 같은 모호한 요청</li><li>한 번에 너무 넓은 설계/구현 범위 넘기기</li><li>검증 없이 바로 커밋/배포로 이어가기</li></ul></section>
+        </section>
+      </article>
+
+      <article class="print-page" style="margin-bottom:20px;">
+        <header class="page-header">
+          <div>
+            <span class="tool-chip codex">Codex</span>
+            <h2>Codex 단축표</h2>
+            <p>자동완성보다 작업 단위 중심으로 쓸 때 필요한 검증 루프와 실행 패턴을 정리한 한 장 요약표.</p>
+          </div>
+          <div class="small-note">v1 · A4 출력용</div>
+        </header>
+        <section class="card-grid">
+          <section class="card"><h3>핵심 단축</h3><ul><li><span class="mono">codex exec "task"</span> one-shot 실행</li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">Ctrl+C</span> 중단</li><li>git repo 안에서 실행하기</li></ul></section>
+          <section class="card"><h3>자주 쓰는 명령 패턴</h3><ul><li><span class="mono">codex exec "Summarize this diff"</span></li><li><span class="mono">codex exec "Fix failing tests in auth module"</span></li><li><span class="mono">codex exec --full-auto "Refactor and run tests"</span></li></ul></section>
+          <section class="card"><h3>작업 단위 설계</h3><ul><li>입력 범위, 목표, 검증 기준을 같이 주기</li><li>작은 리팩터링/원인 조사/초안 생성에 특히 잘 맞음</li><li>큰 작업은 단계별로 쪼개고 중간 확인 넣기</li></ul></section>
+          <section class="card"><h3>검증 루프</h3><ul><li><span class="mono">pytest</span>, <span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span>, <span class="mono">tsc --noEmit</span></li><li>실패 시 변경 파일 / 검증 결과 / 남은 리스크 요약</li></ul></section>
+          <section class="card"><h3>이렇게 쓰기</h3><ul><li>파일 범위를 지정하기</li><li>완료 조건을 명확히 하기</li><li>검증 루프 없이 끝내지 않기</li></ul></section>
+          <section class="card"><h3>피할 것</h3><ul><li>모호한 제품 설계 전체를 한 번에 맡기기</li><li>검증 없이 결과를 신뢰하기</li><li>문맥이 너무 긴 상태로 계속 이어가기</li></ul></section>
+        </section>
+      </article>
+
+      <article class="print-page">
+        <header class="page-header">
+          <div>
+            <span class="tool-chip gemini">Gemini Code</span>
+            <h2>Gemini Code 단축표</h2>
+            <p>요약, 계획, 리뷰, 초안 생성처럼 구조화된 출력이 필요한 흐름에 맞춘 한 장 요약표.</p>
+          </div>
+          <div class="small-note">v1 · A4 출력용</div>
+        </header>
+        <section class="card-grid">
+          <section class="card"><h3>핵심 단축</h3><ul><li>새 작업마다 목표를 한 문장으로 선언</li><li>컨텍스트는 파일/로그/요구사항 순으로 정리</li><li>출력 형식을 먼저 지정</li></ul></section>
+          <section class="card"><h3>자주 쓰는 요청 패턴</h3><ul><li><span class="mono">Summarize this code path</span></li><li><span class="mono">Draft a refactor plan</span></li><li><span class="mono">Review this diff and list risks</span></li></ul></section>
+          <section class="card"><h3>작업 흐름 팁</h3><ul><li>먼저 요약, 다음에 실행 가능한 계획으로 변환</li><li>초안/정리/비교표 생성에 강점을 활용</li><li>코드 수정은 검증 가능한 작은 단위로 제한</li></ul></section>
+          <section class="card"><h3>이렇게 요청하기</h3><ul><li>위험 요인 3개</li><li>단계별 실행 계획</li><li>검증 체크리스트</li><li>최종 요약 5줄</li></ul></section>
+          <section class="card"><h3>이렇게 쓰기</h3><ul><li>리뷰용/문서용/요약용 역할을 명확히 분리</li><li>긴 입력은 항목 단위로 재구성해서 주기</li><li>사람 승인 단계를 끝에 남기기</li></ul></section>
+          <section class="card"><h3>피할 것</h3><ul><li>출력 형식 없이 긴 맥락만 던지기</li><li>코드 실행 책임까지 한 번에 넘기기</li><li>검증 없이 설명만 보고 신뢰하기</li></ul></section>
+        </section>
+      </article>
+    </main>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
