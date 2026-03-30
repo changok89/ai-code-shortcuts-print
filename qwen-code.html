@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwen Code Keyboard Shortcuts</title>
+    <meta name="description" content="Qwen Code 공개 문서 기준 keyboard shortcuts와 입력/완성 조작을 A4 한 장으로 정리한 시트." />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header container screen-only">
+      <div class="topbar">
+        <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
+        <nav class="nav">
+          <a href="./index.html">홈</a>
+          <a href="./combined.html">통합 출력</a>
+          <a href="./claude-code.html">Claude Code</a>
+          <a href="./codex.html">Codex</a>
+          <a href="./gemini-code.html">Gemini Code</a>
+          <a class="active" href="./qwen-code.html">Qwen Code</a>
+        </nav>
+      </div>
+    </header>
+    <main class="print-page-wrap container">
+      <div class="print-toolbar screen-only">
+        <div>
+          <h1>Qwen Code Keyboard Shortcuts</h1>
+          <p class="footer-note">공개 문서 기준 shortcut / input / completion만 모은 A4 시트</p>
+        </div>
+        <div class="actions">
+          <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
+          <button class="button primary" data-print aria-label="Print this shortcut sheet">인쇄</button>
+          <a class="button secondary" href="./index.html">뒤로</a>
+        </div>
+      </div>
+
+      <article class="print-page">
+        <header class="page-header">
+          <div>
+            <span class="tool-chip codex">Qwen Code</span>
+            <h2>Keyboard Shortcuts Only</h2>
+            <p>확인 가능한 shortcut과 입력 조작만 압축</p>
+          </div>
+          <div class="small-note">v1 · A4 one-page</div>
+        </header>
+
+        <section class="cheat-grid">
+          <section class="card"><h3>Core</h3><ul><li><span class="mono">Enter</span> submit</li><li><span class="mono">Shift+Enter</span> newline</li><li><span class="mono">Ctrl+C</span> interrupt / cancel</li><li><span class="mono">Tab</span> completion</li></ul></section>
+          <section class="card"><h3>Input</h3><ul><li><span class="mono">↑ ↓</span> input history</li><li><span class="mono">Tab</span> command completion</li><li><span class="mono">Tab</span> file path completion</li></ul></section>
+          <section class="card"><h3>Completion</h3><ul><li>command completion</li><li>file path completion</li><li>interactive CLI navigation</li></ul></section>
+          <section class="card"><h3>Editing</h3><ul><li><span class="mono">Shift+Enter</span> multiline input</li><li><span class="mono">Ctrl+C</span> stop current run</li></ul></section>
+          <section class="card"><h3>CLI Basics</h3><ul><li><span class="mono">qwen</span> interactive</li><li><span class="mono">qwen "prompt"</span> inline prompt</li><li><span class="mono">qwen -p "prompt"</span> non-interactive</li></ul></section>
+          <section class="card"><h3>Useful Flow</h3><ul><li>type prompt</li><li><span class="mono">Enter</span> submit</li><li><span class="mono">Shift+Enter</span> add line</li><li><span class="mono">Ctrl+C</span> stop</li></ul></section>
+          <section class="card"><h3>Works Best For</h3><ul><li>codebase exploration</li><li>input completion</li><li>quick iterative prompts</li></ul></section>
+          <section class="card"><h3>Keep In Mind</h3><ul><li>shortcut set is smaller than Claude-style UI</li><li>interactive CLI 중심 사용</li></ul></section>
+          <section class="card"><h3>One Line</h3><ul><li>Qwen Code는 keyboard shortcut 자체보다 입력 / 완성 / CLI 흐름이 핵심</li></ul></section>
+        </section>
+
+        <footer class="page-footer">
+          <span>Qwen Code quick keyboard sheet</span>
+          <span>Print on A4 portrait</span>
+        </footer>
+      </article>
+    </main>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

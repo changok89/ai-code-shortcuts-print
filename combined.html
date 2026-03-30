@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Code Shortcut Pack</title>
-    <meta name="description" content="Claude Code, Codex, Gemini Code 치트시트를 한 번에 출력할 수 있는 통합 프린트 페이지." />
+    <meta name="description" content="Claude Code, Codex, Gemini Code, Qwen Code 치트시트를 한 번에 출력할 수 있는 통합 프린트 페이지." />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -17,6 +17,7 @@
           <a href="./claude-code.html">Claude Code</a>
           <a href="./codex.html">Codex</a>
           <a href="./gemini-code.html">Gemini Code</a>
+          <a href="./qwen-code.html">Qwen Code</a>
         </nav>
       </div>
     </header>
@@ -25,7 +26,7 @@
       <div class="print-toolbar screen-only">
         <div>
           <h1>통합 프린트 팩</h1>
-          <p class="footer-note">세 도구 치트시트를 한 번에 인쇄하거나 PDF로 저장하기 좋은 통합 페이지</p>
+          <p class="footer-note">Claude / Codex / Gemini / Qwen 치트시트를 한 번에 인쇄하거나 PDF로 저장하기 좋은 통합 페이지</p>
         </div>
         <div class="actions">
           <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
@@ -35,71 +36,13 @@
       </div>
 
       <div class="combined-stack">
-        <article class="print-page">
-          <header class="page-header">
-            <div>
-              <span class="tool-chip claude">Claude Code</span>
-              <h2>Claude Code 치트시트</h2>
-              <p>작업 위임, 문서 정리, 범위 있는 구현과 리팩터링에 맞춘 압축형 한 장 요약.</p>
-            </div>
-            <div class="small-note">v2 · 통합 출력</div>
-          </header>
-          <section class="cheat-grid">
-            <section class="card"><h3>핵심 키</h3><ul><li><span class="mono">Ctrl+C</span> 실행 중단</li><li><span class="mono">Ctrl+L</span> 화면 정리</li><li><span class="mono">Ctrl+R</span> 히스토리 검색</li><li><span class="mono">Ctrl+G</span> 프롬프트 편집기</li></ul></section>
-            <section class="card"><h3>슬래시 명령</h3><ul><li><span class="mono">/help</span> 도움말</li><li><span class="mono">/clear</span> 문맥 정리</li><li><span class="mono">/status</span> 상태 보기</li><li><span class="mono">/model</span> 모델 전환</li></ul></section>
-            <section class="card"><h3>자주 쓰는 실행</h3><ul><li><span class="mono">claude --print "task"</span></li><li><span class="mono">claude --permission-mode bypassPermissions --print "task"</span></li><li>범위/목표/검증 조건 같이 적기</li></ul></section>
-            <section class="card"><h3>이럴 때 강함</h3><ul><li>문서 초안 / 설명 정리</li><li>범위 있는 구현 작업</li><li>리팩터링 방향 잡기</li><li>작업 위임 + 결과 요약</li></ul></section>
-            <section class="card"><h3>입력 템플릿</h3><ul><li>범위: 어떤 파일/폴더</li><li>목표: 무엇을 바꿀지</li><li>검증: 무엇으로 확인할지</li><li>출력: 어떤 형식으로 받을지</li></ul></section>
-            <section class="card"><h3>좋은 습관</h3><ul><li>검증 명령 함께 넘기기</li><li>큰 작업은 단계로 쪼개기</li><li>최종 승인 단계 남기기</li><li>요약 형식 지정하기</li></ul></section>
-            <section class="card"><h3>피할 것</h3><ul><li>"알아서 다 해줘" 같은 요청</li><li>한 번에 너무 넓은 범위</li><li>검증 없이 커밋/배포</li><li>파일 범위 없이 추상 지시</li></ul></section>
-            <section class="card"><h3>작업 위임 패턴</h3><ul><li>읽기 → 수정 → 검증 → 요약 순으로 지시</li><li>문서/설명은 먼저 초안 받고 다듬기</li><li>반복 작업은 출력 형식 고정</li></ul></section>
-            <section class="card"><h3>한 줄 요약</h3><ul><li>Claude Code는 넓은 맥락 이해와 정리, 작업 위임에 강함</li><li>범위를 선명히 줄수록 품질이 좋아짐</li></ul></section>
-          </section>
-        </article>
+        <article class="print-page"><header class="page-header"><div><span class="tool-chip claude">Claude Code</span><h2>Claude Code</h2><p>Keyboard shortcuts only</p></div><div class="small-note">v3</div></header><section class="cheat-grid"><section class="card"><h3>Core</h3><ul><li><span class="mono">Ctrl+C</span> cancel</li><li><span class="mono">Ctrl+D</span> exit</li><li><span class="mono">Ctrl+L</span> clear</li><li><span class="mono">Ctrl+O</span> verbose</li></ul></section><section class="card"><h3>Input</h3><ul><li><span class="mono">Ctrl+R</span> history</li><li><span class="mono">Ctrl+G</span> editor</li><li><span class="mono">Ctrl+X Ctrl+E</span> editor alias</li><li><span class="mono">Ctrl+V</span> paste image</li></ul></section><section class="card"><h3>Tasks</h3><ul><li><span class="mono">Ctrl+B</span> background</li><li><span class="mono">Ctrl+T</span> task list</li><li><span class="mono">Ctrl+X Ctrl+K</span> kill agents</li><li><span class="mono">Esc Esc</span> rewind</li></ul></section><section class="card"><h3>Modes</h3><ul><li><span class="mono">Shift+Tab</span> permission mode</li><li><span class="mono">Alt+P</span> model</li><li><span class="mono">Alt+T</span> thinking</li><li><span class="mono">Alt+O</span> fast mode</li></ul></section></section></article>
 
-        <article class="print-page">
-          <header class="page-header">
-            <div>
-              <span class="tool-chip codex">Codex</span>
-              <h2>Codex 치트시트</h2>
-              <p>자동완성보다 작업 단위와 검증 루프 중심으로 쓸 때 필요한 실행 패턴 압축판.</p>
-            </div>
-            <div class="small-note">v2 · 통합 출력</div>
-          </header>
-          <section class="cheat-grid">
-            <section class="card"><h3>핵심 명령</h3><ul><li><span class="mono">codex exec "task"</span></li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">Ctrl+C</span> 중단</li><li>git repo 안에서 실행</li></ul></section>
-            <section class="card"><h3>작업 단위</h3><ul><li>입력 범위 명시</li><li>목표 명시</li><li>검증 기준 포함</li><li>출력 형식 지정</li></ul></section>
-            <section class="card"><h3>검증 루프</h3><ul><li><span class="mono">pytest</span></li><li><span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span></li><li><span class="mono">tsc --noEmit</span></li></ul></section>
-            <section class="card"><h3>잘 맞는 일</h3><ul><li>작은 리팩터링</li><li>테스트 실패 원인 찾기</li><li>diff 요약</li><li>PR 설명 초안</li></ul></section>
-            <section class="card"><h3>좋은 요청 예</h3><ul><li><span class="mono">auth.ts</span>와 <span class="mono">token.ts</span> 범위</li><li>401 원인 후보 3개 정리</li><li>재현 조건 포함</li><li>필요 시 수정 후보 제시</li></ul></section>
-            <section class="card"><h3>실패 시 규칙</h3><ul><li>테스트 실패 시 중단</li><li>변경 파일 요약</li><li>검증 결과 정리</li><li>남은 리스크 명시</li></ul></section>
-            <section class="card"><h3>피할 것</h3><ul><li>모호한 제품 설계 전체 위임</li><li>문맥만 길고 목표 없는 요청</li><li>검증 없이 결과 신뢰</li><li>너무 큰 작업 한 번에 넘기기</li></ul></section>
-            <section class="card"><h3>실전 팁</h3><ul><li>작업기처럼 쓰고 자동완성으로만 보지 않기</li><li>중간 확인 가능한 크기로 쪼개기</li><li>검증 가능한 일부터 맡기기</li></ul></section>
-            <section class="card"><h3>한 줄 요약</h3><ul><li>Codex는 작업 단위와 검증 루프가 붙을 때 가장 강함</li><li>프롬프트 길이보다 작업 설계가 중요</li></ul></section>
-          </section>
-        </article>
+        <article class="print-page"><header class="page-header"><div><span class="tool-chip codex">Codex</span><h2>Codex</h2><p>Quick reference</p></div><div class="small-note">v3</div></header><section class="cheat-grid"><section class="card"><h3>Core</h3><ul><li><span class="mono">Ctrl+C</span> stop</li><li><span class="mono">Enter</span> submit</li><li><span class="mono">↑ ↓</span> history</li><li><span class="mono">Tab</span> completion</li></ul></section><section class="card"><h3>Exec</h3><ul><li><span class="mono">codex exec "task"</span></li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">codex exec --json "task"</span></li></ul></section><section class="card"><h3>Modes</h3><ul><li><span class="mono">--full-auto</span></li><li><span class="mono">--yolo</span></li><li><span class="mono">exec</span></li></ul></section><section class="card"><h3>Validation</h3><ul><li><span class="mono">pytest</span></li><li><span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span></li><li><span class="mono">tsc --noEmit</span></li></ul></section></section></article>
 
-        <article class="print-page">
-          <header class="page-header">
-            <div>
-              <span class="tool-chip gemini">Gemini Code</span>
-              <h2>Gemini Code 치트시트</h2>
-              <p>요약, 계획, 리뷰, 초안 생성처럼 구조화된 출력이 필요한 흐름에 맞춘 압축형 한 장 요약.</p>
-            </div>
-            <div class="small-note">v2 · 통합 출력</div>
-          </header>
-          <section class="cheat-grid">
-            <section class="card"><h3>핵심 원칙</h3><ul><li>목표를 한 문장으로 선언</li><li>맥락은 항목 단위로 정리</li><li>출력 형식을 먼저 고정</li><li>길게 주기보다 구조화해서 주기</li></ul></section>
-            <section class="card"><h3>자주 쓰는 요청</h3><ul><li><span class="mono">Summarize this code path</span></li><li><span class="mono">Draft a refactor plan</span></li><li><span class="mono">Review this diff and list risks</span></li><li><span class="mono">Turn notes into checklist</span></li></ul></section>
-            <section class="card"><h3>강한 영역</h3><ul><li>요약</li><li>계획</li><li>리뷰 초안</li><li>구조화된 문서 출력</li></ul></section>
-            <section class="card"><h3>출력 형식 예</h3><ul><li>위험 요인 3개</li><li>단계별 실행 계획</li><li>검증 체크리스트</li><li>최종 요약 5줄</li></ul></section>
-            <section class="card"><h3>이렇게 쓰기</h3><ul><li>리뷰용/문서용/요약용 역할 분리</li><li>긴 입력은 파일/로그/질문 순으로 재구성</li><li>사람 승인 단계를 끝에 남기기</li></ul></section>
-            <section class="card"><h3>피할 것</h3><ul><li>출력 형식 없이 긴 맥락만 던지기</li><li>실행 책임까지 한 번에 넘기기</li><li>검증 없이 설명만 보고 신뢰하기</li><li>목표 없이 브레인스토밍만 길게 하기</li></ul></section>
-            <section class="card"><h3>실전 팁</h3><ul><li>요약 → 계획 → 체크리스트 순으로 요청</li><li>비교표, 구조 정리, 초안 생성에 활용</li><li>코드 변경은 작은 단위로 검증 가능하게</li></ul></section>
-            <section class="card"><h3>모바일에서 보기</h3><ul><li>카드가 1열로 접혀도 읽기 쉽게 설계</li><li>짧은 문장 / 짧은 불릿 위주로 유지</li><li>스크린샷보다 텍스트 밀도 우선</li></ul></section>
-            <section class="card"><h3>한 줄 요약</h3><ul><li>Gemini Code는 구조화된 출력이 필요한 흐름에서 특히 강함</li><li>무엇을 어떤 형식으로 받을지 먼저 정할수록 좋음</li></ul></section>
-          </section>
-        </article>
+        <article class="print-page"><header class="page-header"><div><span class="tool-chip gemini">Gemini</span><h2>Gemini Code</h2><p>Quick request sheet</p></div><div class="small-note">v3</div></header><section class="cheat-grid"><section class="card"><h3>Core</h3><ul><li><span class="mono">Enter</span> submit</li><li><span class="mono">Shift+Enter</span> newline</li><li><span class="mono">Ctrl/Cmd+C</span> interrupt</li><li><span class="mono">Tab</span> completion</li></ul></section><section class="card"><h3>Prompt Shape</h3><ul><li>goal</li><li>scope</li><li>format</li><li>validation</li></ul></section><section class="card"><h3>Useful Requests</h3><ul><li>summarize code path</li><li>draft plan</li><li>review diff</li><li>make checklist</li></ul></section><section class="card"><h3>Output</h3><ul><li>3 risks</li><li>step plan</li><li>checklist</li><li>5-line summary</li></ul></section></section></article>
+
+        <article class="print-page"><header class="page-header"><div><span class="tool-chip codex">Qwen Code</span><h2>Qwen Code</h2><p>Keyboard / input quick sheet</p></div><div class="small-note">v1</div></header><section class="cheat-grid"><section class="card"><h3>Core</h3><ul><li><span class="mono">Enter</span> submit</li><li><span class="mono">Shift+Enter</span> newline</li><li><span class="mono">Ctrl+C</span> interrupt</li><li><span class="mono">Tab</span> completion</li></ul></section><section class="card"><h3>Input</h3><ul><li><span class="mono">↑ ↓</span> history</li><li><span class="mono">Tab</span> command completion</li><li><span class="mono">Tab</span> file path completion</li></ul></section><section class="card"><h3>CLI</h3><ul><li><span class="mono">qwen</span> interactive</li><li><span class="mono">qwen "prompt"</span></li><li><span class="mono">qwen -p "prompt"</span></li></ul></section><section class="card"><h3>One Line</h3><ul><li>Qwen Code는 입력/완성/CLI 흐름이 핵심</li></ul></section></section></article>
       </div>
     </main>
     <script src="./assets/app.js"></script>
