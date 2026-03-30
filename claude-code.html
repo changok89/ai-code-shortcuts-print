@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Claude Code Shortcut Sheet</title>
-    <meta name="description" content="Claude Code를 A4 한 장으로 출력할 수 있게 정리한 밀도 높은 치트시트." />
+    <title>Claude Code Keyboard Shortcuts</title>
+    <meta name="description" content="Claude Code 키보드 단축키만 A4 한 장으로 정리한 출력용 치트시트." />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -23,8 +23,8 @@
     <main class="print-page-wrap container">
       <div class="print-toolbar screen-only">
         <div>
-          <h1>Claude Code 치트시트</h1>
-          <p class="footer-note">PC와 모바일에서 읽기 쉽고, A4 한 장으로 출력 가능한 참조표</p>
+          <h1>Claude Code Keyboard Shortcuts</h1>
+          <p class="footer-note">키보드 단축키만 모은 A4 한 장 치트시트</p>
         </div>
         <div class="actions">
           <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
@@ -37,27 +37,135 @@
         <header class="page-header">
           <div>
             <span class="tool-chip claude">Claude Code</span>
-            <h2>Claude Code 치트시트</h2>
-            <p>작업 위임, 문서 정리, 범위 있는 구현과 리팩터링에 맞춘 압축형 한 장 요약.</p>
+            <h2>Keyboard Shortcuts Only</h2>
+            <p>설명 없이 단축키만 빠르게 훑는 출력용 요약표</p>
           </div>
-          <div class="small-note">v2 · color / mono toggle</div>
+          <div class="small-note">v3 · A4 one-page</div>
         </header>
 
         <section class="cheat-grid">
-          <section class="card"><h3>핵심 키</h3><ul><li><span class="mono">Ctrl+C</span> 실행 중단</li><li><span class="mono">Ctrl+L</span> 화면 정리</li><li><span class="mono">Ctrl+R</span> 히스토리 검색</li><li><span class="mono">Ctrl+G</span> 프롬프트 편집기</li></ul></section>
-          <section class="card"><h3>슬래시 명령</h3><ul><li><span class="mono">/help</span> 도움말</li><li><span class="mono">/clear</span> 문맥 정리</li><li><span class="mono">/status</span> 상태 보기</li><li><span class="mono">/model</span> 모델 전환</li></ul></section>
-          <section class="card"><h3>자주 쓰는 실행</h3><ul><li><span class="mono">claude --print "task"</span></li><li><span class="mono">claude --permission-mode bypassPermissions --print "task"</span></li><li>범위/목표/검증 조건 같이 적기</li></ul></section>
-          <section class="card"><h3>이럴 때 강함</h3><ul><li>문서 초안 / 설명 정리</li><li>범위 있는 구현 작업</li><li>리팩터링 방향 잡기</li><li>작업 위임 + 결과 요약</li></ul></section>
-          <section class="card"><h3>입력 템플릿</h3><ul><li>범위: 어떤 파일/폴더</li><li>목표: 무엇을 바꿀지</li><li>검증: 무엇으로 확인할지</li><li>출력: 어떤 형식으로 받을지</li></ul></section>
-          <section class="card"><h3>좋은 습관</h3><ul><li>검증 명령 함께 넘기기</li><li>큰 작업은 단계로 쪼개기</li><li>최종 승인 단계 남기기</li><li>요약 형식 지정하기</li></ul></section>
-          <section class="card"><h3>피할 것</h3><ul><li>"알아서 다 해줘" 같은 요청</li><li>한 번에 너무 넓은 범위</li><li>검증 없이 커밋/배포</li><li>파일 범위 없이 추상 지시</li></ul></section>
-          <section class="card"><h3>작업 위임 패턴</h3><ul><li>읽기 → 수정 → 검증 → 요약 순으로 지시</li><li>문서/설명은 먼저 초안 받고 다듬기</li><li>반복 작업은 출력 형식 고정</li></ul></section>
-          <section class="card"><h3>한 줄 요약</h3><ul><li>Claude Code는 넓은 맥락 이해와 정리, 작업 위임에 강함</li><li>범위를 선명히 줄수록 품질이 좋아짐</li></ul></section>
+          <section class="card">
+            <h3>Core</h3>
+            <ul>
+              <li><span class="mono">Ctrl+C</span> cancel input / generation</li>
+              <li><span class="mono">Ctrl+D</span> exit session</li>
+              <li><span class="mono">Ctrl+L</span> clear screen</li>
+              <li><span class="mono">Ctrl+O</span> toggle verbose / transcript</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Input</h3>
+            <ul>
+              <li><span class="mono">Ctrl+R</span> reverse search history</li>
+              <li><span class="mono">Ctrl+G</span> open prompt in editor</li>
+              <li><span class="mono">Ctrl+X Ctrl+E</span> open in editor</li>
+              <li><span class="mono">Ctrl+V</span> paste image</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Tasks</h3>
+            <ul>
+              <li><span class="mono">Ctrl+B</span> background running task</li>
+              <li><span class="mono">Ctrl+T</span> toggle task list</li>
+              <li><span class="mono">Ctrl+X Ctrl+K</span> kill background agents</li>
+              <li><span class="mono">Esc Esc</span> rewind or summarize</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Modes</h3>
+            <ul>
+              <li><span class="mono">Shift+Tab</span> cycle permission modes</li>
+              <li><span class="mono">Alt+P</span> switch model</li>
+              <li><span class="mono">Alt+T</span> toggle thinking</li>
+              <li><span class="mono">Alt+O</span> toggle fast mode</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Multiline</h3>
+            <ul>
+              <li><span class="mono">\ + Enter</span> newline (quick)</li>
+              <li><span class="mono">Ctrl+J</span> newline</li>
+              <li><span class="mono">/</span> slash command</li>
+              <li><span class="mono">!</span> direct bash</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Mentions</h3>
+            <ul>
+              <li><span class="mono">@</span> file mention + autocomplete</li>
+              <li><span class="mono">↑ ↓</span> navigate list</li>
+              <li><span class="mono">← →</span> expand / collapse</li>
+              <li><span class="mono">P</span> preview</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>List / Tree</h3>
+            <ul>
+              <li><span class="mono">R</span> rename</li>
+              <li><span class="mono">/</span> search</li>
+              <li><span class="mono">A</span> all projects</li>
+              <li><span class="mono">B</span> current branch</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Transcript</h3>
+            <ul>
+              <li><span class="mono">/</span> search transcript</li>
+              <li><span class="mono">N</span> next match</li>
+              <li><span class="mono">Shift+N</span> previous match</li>
+              <li><span class="mono">Ctrl+E</span> toggle show all</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Transcript Exit</h3>
+            <ul>
+              <li><span class="mono">Q</span> exit transcript</li>
+              <li><span class="mono">Esc</span> exit transcript</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Quick Reference</h3>
+            <ul>
+              <li><span class="mono">Ctrl+C</span> stop</li>
+              <li><span class="mono">Ctrl+L</span> clear</li>
+              <li><span class="mono">Ctrl+R</span> history</li>
+              <li><span class="mono">Ctrl+G</span> editor</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Session Control</h3>
+            <ul>
+              <li><span class="mono">Ctrl+B</span> background</li>
+              <li><span class="mono">Ctrl+T</span> task list</li>
+              <li><span class="mono">Esc Esc</span> rewind</li>
+              <li><span class="mono">Ctrl+D</span> exit</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h3>Prompt Mode</h3>
+            <ul>
+              <li><span class="mono">Shift+Tab</span> permission mode</li>
+              <li><span class="mono">Alt+P</span> model</li>
+              <li><span class="mono">Alt+T</span> thinking</li>
+              <li><span class="mono">Alt+O</span> fast mode</li>
+            </ul>
+          </section>
         </section>
 
         <footer class="page-footer">
-          <span>추천 용도: 작업 위임, 문서화, 범위 있는 리팩터링</span>
-          <span>출력해 두고 빠르게 참조하기 좋게 압축</span>
+          <span>Claude Code keyboard shortcuts only</span>
+          <span>Print on A4 portrait</span>
         </footer>
       </article>
     </main>
