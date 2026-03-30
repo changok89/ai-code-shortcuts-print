@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemini Code Shortcut Sheet</title>
-    <meta name="description" content="Gemini Code를 요약, 계획, 리뷰 중심으로 쓸 때 필요한 패턴을 A4 한 장으로 정리한 단축표." />
+    <title>Gemini Shortcut Sheet</title>
+    <meta name="description" content="Gemini Code를 요약, 계획, 리뷰 중심으로 쓸 때 필요한 패턴을 A4 한 장으로 정리한 치트시트." />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -13,6 +13,7 @@
         <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
         <nav class="nav">
           <a href="./index.html">홈</a>
+          <a href="./combined.html">통합 출력</a>
           <a href="./claude-code.html">Claude Code</a>
           <a href="./codex.html">Codex</a>
           <a class="active" href="./gemini-code.html">Gemini Code</a>
@@ -22,10 +23,11 @@
     <main class="print-page-wrap container">
       <div class="print-toolbar screen-only">
         <div>
-          <h1>Gemini Code 단축표</h1>
-          <p class="footer-note">A4 한 장 출력용 요약표</p>
+          <h1>Gemini Code 치트시트</h1>
+          <p class="footer-note">PC와 모바일에서 읽기 쉽고, A4 한 장으로 출력 가능한 참조표</p>
         </div>
         <div class="actions">
+          <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
           <button class="button primary" data-print aria-label="Print this shortcut sheet">인쇄</button>
           <a class="button secondary" href="./index.html">뒤로</a>
         </div>
@@ -35,72 +37,27 @@
         <header class="page-header">
           <div>
             <span class="tool-chip gemini">Gemini Code</span>
-            <h2>Gemini Code 단축표</h2>
-            <p>요약, 계획, 리뷰, 초안 생성처럼 구조화된 출력이 필요한 흐름에 맞춘 한 장 요약표.</p>
+            <h2>Gemini Code 치트시트</h2>
+            <p>요약, 계획, 리뷰, 초안 생성처럼 구조화된 출력이 필요한 흐름에 맞춘 압축형 한 장 요약.</p>
           </div>
-          <div class="small-note">v1 · A4 출력용</div>
+          <div class="small-note">v2 · color / mono toggle</div>
         </header>
 
-        <section class="card-grid">
-          <section class="card">
-            <h3>핵심 단축</h3>
-            <ul>
-              <li>새 작업마다 목표를 한 문장으로 선언</li>
-              <li>컨텍스트는 파일/로그/요구사항 순으로 정리</li>
-              <li>출력 형식을 먼저 지정</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>자주 쓰는 요청 패턴</h3>
-            <ul>
-              <li><span class="mono">Summarize this code path</span></li>
-              <li><span class="mono">Draft a refactor plan</span></li>
-              <li><span class="mono">Review this diff and list risks</span></li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>작업 흐름 팁</h3>
-            <ul>
-              <li>먼저 요약, 다음에 실행 가능한 계획으로 변환</li>
-              <li>초안/정리/비교표 생성에 강점을 활용</li>
-              <li>코드 수정은 검증 가능한 작은 단위로 제한</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>이렇게 요청하기</h3>
-            <ul>
-              <li>위험 요인 3개</li>
-              <li>단계별 실행 계획</li>
-              <li>검증 체크리스트</li>
-              <li>최종 요약 5줄</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>이렇게 쓰기</h3>
-            <ul>
-              <li>리뷰용/문서용/요약용 역할을 명확히 분리</li>
-              <li>긴 입력은 항목 단위로 재구성해서 주기</li>
-              <li>사람 승인 단계를 끝에 남기기</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>피할 것</h3>
-            <ul>
-              <li>출력 형식 없이 긴 맥락만 던지기</li>
-              <li>코드 실행 책임까지 한 번에 넘기기</li>
-              <li>검증 없이 설명만 보고 신뢰하기</li>
-            </ul>
-          </section>
+        <section class="cheat-grid">
+          <section class="card"><h3>핵심 원칙</h3><ul><li>목표를 한 문장으로 선언</li><li>맥락은 항목 단위로 정리</li><li>출력 형식을 먼저 고정</li><li>길게 주기보다 구조화해서 주기</li></ul></section>
+          <section class="card"><h3>자주 쓰는 요청</h3><ul><li><span class="mono">Summarize this code path</span></li><li><span class="mono">Draft a refactor plan</span></li><li><span class="mono">Review this diff and list risks</span></li><li><span class="mono">Turn notes into checklist</span></li></ul></section>
+          <section class="card"><h3>강한 영역</h3><ul><li>요약</li><li>계획</li><li>리뷰 초안</li><li>구조화된 문서 출력</li></ul></section>
+          <section class="card"><h3>출력 형식 예</h3><ul><li>위험 요인 3개</li><li>단계별 실행 계획</li><li>검증 체크리스트</li><li>최종 요약 5줄</li></ul></section>
+          <section class="card"><h3>이렇게 쓰기</h3><ul><li>리뷰용/문서용/요약용 역할 분리</li><li>긴 입력은 파일/로그/질문 순으로 재구성</li><li>사람 승인 단계를 끝에 남기기</li></ul></section>
+          <section class="card"><h3>피할 것</h3><ul><li>출력 형식 없이 긴 맥락만 던지기</li><li>실행 책임까지 한 번에 넘기기</li><li>검증 없이 설명만 보고 신뢰하기</li><li>목표 없이 브레인스토밍만 길게 하기</li></ul></section>
+          <section class="card"><h3>실전 팁</h3><ul><li>요약 → 계획 → 체크리스트 순으로 요청</li><li>비교표, 구조 정리, 초안 생성에 활용</li><li>코드 변경은 작은 단위로 검증 가능하게</li></ul></section>
+          <section class="card"><h3>모바일에서 보기</h3><ul><li>카드가 1열로 접혀도 읽기 쉽게 설계</li><li>짧은 문장 / 짧은 불릿 위주로 유지</li><li>스크린샷보다 텍스트 밀도 우선</li></ul></section>
+          <section class="card"><h3>한 줄 요약</h3><ul><li>Gemini Code는 구조화된 출력이 필요한 흐름에서 특히 강함</li><li>무엇을 어떤 형식으로 받을지 먼저 정할수록 좋음</li></ul></section>
         </section>
 
         <footer class="page-footer">
           <span>추천 용도: 요약, 계획, 리뷰, 구조화된 초안</span>
-          <span>출력 형식을 선명하게 잡을수록 강함</span>
+          <span>출력 형식을 선명하게 잡을수록 품질이 안정적</span>
         </footer>
       </article>
     </main>

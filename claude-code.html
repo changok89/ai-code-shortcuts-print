@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claude Code Shortcut Sheet</title>
-    <meta name="description" content="Claude Code를 A4 한 장으로 출력할 수 있게 정리한 단축표." />
+    <meta name="description" content="Claude Code를 A4 한 장으로 출력할 수 있게 정리한 밀도 높은 치트시트." />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -13,6 +13,7 @@
         <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
         <nav class="nav">
           <a href="./index.html">홈</a>
+          <a href="./combined.html">통합 출력</a>
           <a class="active" href="./claude-code.html">Claude Code</a>
           <a href="./codex.html">Codex</a>
           <a href="./gemini-code.html">Gemini Code</a>
@@ -22,10 +23,11 @@
     <main class="print-page-wrap container">
       <div class="print-toolbar screen-only">
         <div>
-          <h1>Claude Code 단축표</h1>
-          <p class="footer-note">A4 한 장 출력용 요약표</p>
+          <h1>Claude Code 치트시트</h1>
+          <p class="footer-note">PC와 모바일에서 읽기 쉽고, A4 한 장으로 출력 가능한 참조표</p>
         </div>
         <div class="actions">
+          <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
           <button class="button primary" data-print aria-label="Print this shortcut sheet">인쇄</button>
           <a class="button secondary" href="./index.html">뒤로</a>
         </div>
@@ -35,72 +37,27 @@
         <header class="page-header">
           <div>
             <span class="tool-chip claude">Claude Code</span>
-            <h2>Claude Code 단축표</h2>
-            <p>작업 위임, 범위 지정, 문서 정리, 리팩터링 지시에 맞춘 한 장 요약표.</p>
+            <h2>Claude Code 치트시트</h2>
+            <p>작업 위임, 문서 정리, 범위 있는 구현과 리팩터링에 맞춘 압축형 한 장 요약.</p>
           </div>
-          <div class="small-note">v1 · A4 출력용</div>
+          <div class="small-note">v2 · color / mono toggle</div>
         </header>
 
-        <section class="card-grid">
-          <section class="card">
-            <h3>핵심 단축</h3>
-            <ul>
-              <li><span class="mono">/help</span> 핵심 명령 보기</li>
-              <li><span class="mono">/clear</span> 현재 대화 문맥 정리</li>
-              <li><span class="mono">/status</span> 모델/세션 상태 확인</li>
-              <li><span class="mono">Ctrl+C</span> 실행 중단</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>자주 쓰는 명령 패턴</h3>
-            <ul>
-              <li><span class="mono">claude --print "task"</span></li>
-              <li><span class="mono">claude --permission-mode bypassPermissions --print "task"</span></li>
-              <li>구현 전 파일 범위와 완료 조건을 먼저 명시</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>작업 흐름 팁</h3>
-            <ul>
-              <li>작업 목표, 범위, 검증 기준을 3줄로 나눠 주기</li>
-              <li>문서/설명 초안은 먼저 받고 최종 마감은 사람이 검토</li>
-              <li>큰 작업은 기능 단위로 쪼개서 순차 실행</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>이럴 때 좋음</h3>
-            <ul>
-              <li>파일 범위가 비교적 명확한 구현</li>
-              <li>문서 초안, 리팩터링, 구조 정리</li>
-              <li>작업 위임과 결과 요약이 같이 필요한 경우</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>이렇게 쓰기</h3>
-            <ul>
-              <li>관련 파일 경로를 먼저 지정</li>
-              <li>테스트/검증 명령을 함께 넘기기</li>
-              <li>출력 형식을 지정해서 요약 받기</li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h3>피할 것</h3>
-            <ul>
-              <li>"알아서 다 해줘" 같은 모호한 요청</li>
-              <li>한 번에 너무 넓은 설계/구현 범위 넘기기</li>
-              <li>검증 없이 바로 커밋/배포로 이어가기</li>
-            </ul>
-          </section>
+        <section class="cheat-grid">
+          <section class="card"><h3>핵심 키</h3><ul><li><span class="mono">Ctrl+C</span> 실행 중단</li><li><span class="mono">Ctrl+L</span> 화면 정리</li><li><span class="mono">Ctrl+R</span> 히스토리 검색</li><li><span class="mono">Ctrl+G</span> 프롬프트 편집기</li></ul></section>
+          <section class="card"><h3>슬래시 명령</h3><ul><li><span class="mono">/help</span> 도움말</li><li><span class="mono">/clear</span> 문맥 정리</li><li><span class="mono">/status</span> 상태 보기</li><li><span class="mono">/model</span> 모델 전환</li></ul></section>
+          <section class="card"><h3>자주 쓰는 실행</h3><ul><li><span class="mono">claude --print "task"</span></li><li><span class="mono">claude --permission-mode bypassPermissions --print "task"</span></li><li>범위/목표/검증 조건 같이 적기</li></ul></section>
+          <section class="card"><h3>이럴 때 강함</h3><ul><li>문서 초안 / 설명 정리</li><li>범위 있는 구현 작업</li><li>리팩터링 방향 잡기</li><li>작업 위임 + 결과 요약</li></ul></section>
+          <section class="card"><h3>입력 템플릿</h3><ul><li>범위: 어떤 파일/폴더</li><li>목표: 무엇을 바꿀지</li><li>검증: 무엇으로 확인할지</li><li>출력: 어떤 형식으로 받을지</li></ul></section>
+          <section class="card"><h3>좋은 습관</h3><ul><li>검증 명령 함께 넘기기</li><li>큰 작업은 단계로 쪼개기</li><li>최종 승인 단계 남기기</li><li>요약 형식 지정하기</li></ul></section>
+          <section class="card"><h3>피할 것</h3><ul><li>"알아서 다 해줘" 같은 요청</li><li>한 번에 너무 넓은 범위</li><li>검증 없이 커밋/배포</li><li>파일 범위 없이 추상 지시</li></ul></section>
+          <section class="card"><h3>작업 위임 패턴</h3><ul><li>읽기 → 수정 → 검증 → 요약 순으로 지시</li><li>문서/설명은 먼저 초안 받고 다듬기</li><li>반복 작업은 출력 형식 고정</li></ul></section>
+          <section class="card"><h3>한 줄 요약</h3><ul><li>Claude Code는 넓은 맥락 이해와 정리, 작업 위임에 강함</li><li>범위를 선명히 줄수록 품질이 좋아짐</li></ul></section>
         </section>
 
         <footer class="page-footer">
           <span>추천 용도: 작업 위임, 문서화, 범위 있는 리팩터링</span>
-          <span>책상 옆에 두고 바로 보기 좋게 구성</span>
+          <span>출력해 두고 빠르게 참조하기 좋게 압축</span>
         </footer>
       </article>
     </main>
