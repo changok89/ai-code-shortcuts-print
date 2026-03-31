@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,28 +12,29 @@
       <div class="topbar">
         <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
         <nav class="nav">
-          <a class="active" href="./index.html">홈</a>
-          <a href="./combined.html">통합 출력</a>
+          <a class="active" href="./index.html" data-ko="홈" data-en="Home">홈</a>
+          <a href="./combined.html" data-ko="통합 출력" data-en="Print Pack">통합 출력</a>
           <a href="./claude-code.html">Claude</a>
           <a href="./codex.html">Codex</a>
           <a href="./gemini-code.html">Gemini</a>
           <a href="./qwen-code.html">Qwen</a>
           <a href="./harness-engineering.html">Harness</a>
         </nav>
+        <div class="lang-switch">
+          <button class="lang-button active" data-lang="ko" aria-pressed="true">KO</button>
+          <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero container">
         <div class="hero-card">
-          <span class="eyebrow">한눈에 보는 압축형 치트시트</span>
-          <h1>설명은 줄이고, 단축키와 운영 패턴은 한 장에 몰아넣은 AI 코드 치트시트</h1>
-          <p class="lead">
-            Claude Code, Codex, Gemini Code, Qwen Code를 빠르게 훑을 수 있게 설명을 최대한 줄이고,
-            키 / 명령 / 모드 / 실전 패턴 / 하네스 비교만 남긴 출력용 사이트야.
-          </p>
+          <span class="eyebrow" data-ko="한눈에 보는 압축형 치트시트" data-en="Dense one-page cheat sheets">한눈에 보는 압축형 치트시트</span>
+          <h1 data-ko="설명은 줄이고, 단축키와 운영 패턴은 한 장에 몰아넣은 AI 코드 치트시트" data-en="AI coding cheat sheets that compress shortcuts and workflow patterns into one page">설명은 줄이고, 단축키와 운영 패턴은 한 장에 몰아넣은 AI 코드 치트시트</h1>
+          <p class="lead" data-ko="Claude Code, Codex, Gemini Code, Qwen Code를 빠르게 훑을 수 있게 설명을 최대한 줄이고, 키 / 명령 / 모드 / 실전 패턴 / 하네스 비교만 남긴 출력용 사이트야." data-en="A printable site for Claude Code, Codex, Gemini Code, and Qwen Code with reduced explanation and dense focus on keys, commands, modes, working patterns, and harness comparisons.">Claude Code, Codex, Gemini Code, Qwen Code를 빠르게 훑을 수 있게 설명을 최대한 줄이고, 키 / 명령 / 모드 / 실전 패턴 / 하네스 비교만 남긴 출력용 사이트야.</p>
           <div class="actions">
-            <a class="button primary" href="./combined.html">통합 출력</a>
+            <a class="button primary" href="./combined.html" data-ko="통합 출력" data-en="Print Pack">통합 출력</a>
             <a class="button secondary" href="./claude-code.html">Claude</a>
             <a class="button secondary" href="./codex.html">Codex</a>
             <a class="button secondary" href="./gemini-code.html">Gemini</a>
@@ -48,42 +49,37 @@
           <article class="tool-card">
             <span class="tool-chip claude">Claude</span>
             <h2>Claude Code</h2>
-            <p>작업 위임, 슬래시 명령, 장기 문맥, 계획/리뷰 흐름 중심.</p>
+            <p data-ko="작업 위임, 슬래시 명령, 장기 문맥, 계획/리뷰 흐름 중심." data-en="Best for task delegation, slash commands, long context, and planning/review flow.">작업 위임, 슬래시 명령, 장기 문맥, 계획/리뷰 흐름 중심.</p>
             <div class="badge-row"><span class="badge">keys</span><span class="badge">slash</span><span class="badge">workflow</span></div>
-            <div class="actions"><a class="button secondary" href="./claude-code.html">열기</a></div>
+            <div class="actions"><a class="button secondary" href="./claude-code.html" data-ko="열기" data-en="Open">열기</a></div>
           </article>
-
           <article class="tool-card">
             <span class="tool-chip codex">Codex</span>
             <h2>Codex</h2>
-            <p>작업 단위 설계, exec 패턴, 검증 루프, 구현 실행기 관점.</p>
+            <p data-ko="작업 단위 설계, exec 패턴, 검증 루프, 구현 실행기 관점." data-en="Focused on task framing, exec patterns, validation loops, and implementation execution.">작업 단위 설계, exec 패턴, 검증 루프, 구현 실행기 관점.</p>
             <div class="badge-row"><span class="badge">exec</span><span class="badge">verify</span><span class="badge">tasks</span></div>
-            <div class="actions"><a class="button secondary" href="./codex.html">열기</a></div>
+            <div class="actions"><a class="button secondary" href="./codex.html" data-ko="열기" data-en="Open">열기</a></div>
           </article>
-
           <article class="tool-card">
             <span class="tool-chip gemini">Gemini</span>
             <h2>Gemini Code</h2>
-            <p>요약, 계획, 리뷰, 구조화된 출력 형식 중심 quick sheet.</p>
+            <p data-ko="요약, 계획, 리뷰, 구조화된 출력 형식 중심 quick sheet." data-en="A quick sheet focused on summary, planning, review, and structured output.">요약, 계획, 리뷰, 구조화된 출력 형식 중심 quick sheet.</p>
             <div class="badge-row"><span class="badge">summary</span><span class="badge">plan</span><span class="badge">review</span></div>
-            <div class="actions"><a class="button secondary" href="./gemini-code.html">열기</a></div>
+            <div class="actions"><a class="button secondary" href="./gemini-code.html" data-ko="열기" data-en="Open">열기</a></div>
           </article>
-
           <article class="tool-card">
             <span class="tool-chip codex">Qwen</span>
             <h2>Qwen Code</h2>
-            <p>공개 문서 기준 keyboard shortcut과 입력/완성 조작 중심 quick reference.</p>
+            <p data-ko="공개 문서 기준 keyboard shortcut과 입력/완성 조작 중심 quick reference." data-en="A quick reference based on public docs for keyboard shortcuts and input/completion flow.">공개 문서 기준 keyboard shortcut과 입력/완성 조작 중심 quick reference.</p>
             <div class="badge-row"><span class="badge">keys</span><span class="badge">input</span><span class="badge">completion</span></div>
-            <div class="actions"><a class="button secondary" href="./qwen-code.html">열기</a></div>
+            <div class="actions"><a class="button secondary" href="./qwen-code.html" data-ko="열기" data-en="Open">열기</a></div>
           </article>
         </div>
 
         <div class="section">
           <h2>Harness Engineering</h2>
-          <p>CLI별로 무엇을 메인 허브로 두고, 무엇을 구현/요약/검증용으로 배치할지 A4 한 장으로 비교 정리해뒀어.</p>
-          <div class="actions">
-            <a class="button secondary" href="./harness-engineering.html">A4 요약 열기</a>
-          </div>
+          <p data-ko="CLI별로 무엇을 메인 허브로 두고, 무엇을 구현/요약/검증용으로 배치할지 A4 한 장으로 비교 정리해뒀어." data-en="A one-page A4 comparison that shows which CLI works best as a main hub, implementation executor, summarizer, or validation layer.">CLI별로 무엇을 메인 허브로 두고, 무엇을 구현/요약/검증용으로 배치할지 A4 한 장으로 비교 정리해뒀어.</p>
+          <div class="actions"><a class="button secondary" href="./harness-engineering.html" data-ko="A4 요약 열기" data-en="Open A4 Summary">A4 요약 열기</a></div>
         </div>
       </section>
     </main>

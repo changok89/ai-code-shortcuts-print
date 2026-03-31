@@ -1,69 +1,22 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codex Keyboard Shortcuts</title>
-    <meta name="description" content="Codex에서 빠르게 참고할 수 있게 최소 키 조작과 실행 패턴을 A4 한 장으로 정리한 출력용 시트." />
-    <link rel="stylesheet" href="./assets/styles.css" />
-  </head>
+<html lang="ko" data-lang="ko">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Codex Quick Sheet</title><meta name="description" content="Codex에서 빠르게 참고할 수 있게 최소 키 조작과 실행 패턴을 A4 한 장으로 정리한 출력용 시트." /><link rel="stylesheet" href="./assets/styles.css" /></head>
   <body>
-    <header class="site-header container screen-only">
-      <div class="topbar">
-        <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
-        <nav class="nav">
-          <a href="./index.html">홈</a>
-          <a href="./combined.html">통합 출력</a>
-          <a href="./claude-code.html">Claude Code</a>
-          <a class="active" href="./codex.html">Codex</a>
-          <a href="./gemini-code.html">Gemini Code</a>
-        </nav>
-      </div>
-    </header>
-    <main class="print-page-wrap container">
-      <div class="print-toolbar screen-only">
-        <div>
-          <h1>Codex Quick Sheet</h1>
-          <p class="footer-note">불필요한 설명 없이 실행/조작만 빠르게 보기 위한 A4 시트</p>
-        </div>
-        <div class="actions">
-          <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
-          <button class="button primary" data-print aria-label="Print this shortcut sheet">인쇄</button>
-          <a class="button secondary" href="./index.html">뒤로</a>
-        </div>
-      </div>
-
-      <article class="print-page">
-        <header class="page-header">
-          <div>
-            <span class="tool-chip codex">Codex</span>
-            <h2>Codex Quick Sheet</h2>
-            <p>키보드 조작 + 자주 쓰는 실행 패턴만 압축</p>
-          </div>
-          <div class="small-note">v3 · A4 one-page</div>
-        </header>
-
-        <section class="cheat-grid">
-          <section class="card"><h3>Core</h3><ul><li><span class="mono">Ctrl+C</span> stop current run</li><li><span class="mono">Enter</span> submit</li><li><span class="mono">↑ ↓</span> history / navigation</li><li><span class="mono">Tab</span> shell completion</li></ul></section>
-          <section class="card"><h3>One-shot</h3><ul><li><span class="mono">codex exec "task"</span></li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">codex exec --json "task"</span></li></ul></section>
-          <section class="card"><h3>Run Modes</h3><ul><li><span class="mono">--full-auto</span> auto-approve in workspace</li><li><span class="mono">--yolo</span> no sandbox / no approvals</li><li><span class="mono">exec</span> run then exit</li></ul></section>
-          <section class="card"><h3>Session</h3><ul><li><span class="mono">codex</span> interactive mode</li><li><span class="mono">Ctrl+C</span> interrupt turn</li><li>rerun with edited prompt if needed</li></ul></section>
-          <section class="card"><h3>Git / Repo</h3><ul><li>run inside trusted git repo</li><li><span class="mono">git init</span> for scratch dir</li><li>commit after validation</li></ul></section>
-          <section class="card"><h3>Validation</h3><ul><li><span class="mono">pytest</span></li><li><span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span></li><li><span class="mono">tsc --noEmit</span></li></ul></section>
-          <section class="card"><h3>Diff / Review</h3><ul><li><span class="mono">git diff</span> inspect changes</li><li><span class="mono">git status</span> changed files</li><li>review before commit</li></ul></section>
-          <section class="card"><h3>Good Inputs</h3><ul><li>scope</li><li>goal</li><li>validation</li><li>expected output</li></ul></section>
-          <section class="card"><h3>Avoid</h3><ul><li>huge vague tasks</li><li>no validation</li><li>blind commit / push</li></ul></section>
-          <section class="card"><h3>Quick Commands</h3><ul><li><span class="mono">codex exec "summarize diff"</span></li><li><span class="mono">codex exec "fix failing tests"</span></li><li><span class="mono">codex exec "draft PR summary"</span></li></ul></section>
-          <section class="card"><h3>Task Shape</h3><ul><li>small refactor</li><li>bug fix</li><li>log-based investigation</li><li>summary draft</li></ul></section>
-          <section class="card"><h3>One Line</h3><ul><li>Codex는 shortcut보다 실행 패턴과 검증 루프를 같이 보는 쪽이 실제 사용에 더 유리함</li></ul></section>
-        </section>
-
-        <footer class="page-footer">
-          <span>Codex quick execution sheet</span>
-          <span>Print on A4 portrait</span>
-        </footer>
-      </article>
-    </main>
-    <script src="./assets/app.js"></script>
-  </body>
-</html>
+    <header class="site-header container screen-only"><div class="topbar"><a class="brand" href="./index.html">AI Code Shortcuts Print</a><nav class="nav"><a href="./index.html" data-ko="홈" data-en="Home">홈</a><a href="./combined.html" data-ko="통합 출력" data-en="Print Pack">통합 출력</a><a href="./claude-code.html">Claude Code</a><a class="active" href="./codex.html">Codex</a><a href="./gemini-code.html">Gemini Code</a><a href="./qwen-code.html">Qwen Code</a></nav><div class="lang-switch"><button class="lang-button active" data-lang="ko">KO</button><button class="lang-button" data-lang="en">EN</button></div></div></header>
+    <main class="print-page-wrap container"><div class="print-toolbar screen-only"><div><h1 data-ko="Codex 요약 시트" data-en="Codex Quick Sheet">Codex 요약 시트</h1><p class="footer-note" data-ko="불필요한 설명 없이 실행/조작만 빠르게 보기 위한 A4 시트" data-en="An A4 sheet focused on execution and interaction without extra explanation.">불필요한 설명 없이 실행/조작만 빠르게 보기 위한 A4 시트</p></div><div class="toolbar-meta actions"><button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button><button class="button primary" data-print data-ko="인쇄" data-en="Print">인쇄</button><a class="button secondary" href="./index.html" data-ko="뒤로" data-en="Back">뒤로</a></div></div>
+      <article class="print-page"><header class="page-header"><div><span class="tool-chip codex">Codex</span><h2 data-ko="Codex 요약 시트" data-en="Codex Quick Sheet">Codex 요약 시트</h2><p data-ko="키보드 조작과 자주 쓰는 실행 패턴만 압축" data-en="Compressed view of keyboard actions and common execution patterns.">키보드 조작과 자주 쓰는 실행 패턴만 압축</p></div><div class="small-note">v4 · A4 one-page</div></header>
+      <section class="cheat-grid">
+        <section class="card"><h3 data-ko="핵심" data-en="Core">핵심</h3><ul><li><span class="mono">Ctrl+C</span> <span data-ko="현재 실행 중단" data-en="stop current run">현재 실행 중단</span></li><li><span class="mono">Enter</span> <span data-ko="전송" data-en="submit">전송</span></li><li><span class="mono">↑ ↓</span> <span data-ko="히스토리/이동" data-en="history / navigation">히스토리/이동</span></li><li><span class="mono">Tab</span> <span data-ko="셸 완성" data-en="shell completion">셸 완성</span></li></ul></section>
+        <section class="card"><h3 data-ko="원샷 실행" data-en="One-shot">원샷 실행</h3><ul><li><span class="mono">codex exec "task"</span></li><li><span class="mono">codex exec --full-auto "task"</span></li><li><span class="mono">codex exec --json "task"</span></li></ul></section>
+        <section class="card"><h3 data-ko="실행 모드" data-en="Run Modes">실행 모드</h3><ul><li><span class="mono">--full-auto</span> <span data-ko="워크스페이스 자동 승인" data-en="auto-approve in workspace">워크스페이스 자동 승인</span></li><li><span class="mono">--yolo</span> <span data-ko="샌드박스/승인 없음" data-en="no sandbox / no approvals">샌드박스/승인 없음</span></li><li><span class="mono">exec</span> <span data-ko="실행 후 종료" data-en="run then exit">실행 후 종료</span></li></ul></section>
+        <section class="card"><h3 data-ko="세션" data-en="Session">세션</h3><ul><li><span class="mono">codex</span> <span data-ko="대화형 모드" data-en="interactive mode">대화형 모드</span></li><li><span class="mono">Ctrl+C</span> <span data-ko="턴 중단" data-en="interrupt turn">턴 중단</span></li><li data-ko="필요하면 프롬프트 수정 후 재실행" data-en="rerun with an edited prompt if needed">필요하면 프롬프트 수정 후 재실행</li></ul></section>
+        <section class="card"><h3 data-ko="Git / 저장소" data-en="Git / Repo">Git / 저장소</h3><ul><li data-ko="신뢰 가능한 git 저장소 안에서 실행" data-en="run inside a trusted git repo">신뢰 가능한 git 저장소 안에서 실행</li><li><span class="mono">git init</span> <span data-ko="임시 디렉토리 시작" data-en="for scratch dir">임시 디렉토리 시작</span></li><li data-ko="검증 후 커밋" data-en="commit after validation">검증 후 커밋</li></ul></section>
+        <section class="card"><h3 data-ko="검증" data-en="Validation">검증</h3><ul><li><span class="mono">pytest</span></li><li><span class="mono">npm test</span></li><li><span class="mono">pnpm lint</span></li><li><span class="mono">tsc --noEmit</span></li></ul></section>
+        <section class="card"><h3 data-ko="Diff / 리뷰" data-en="Diff / Review">Diff / 리뷰</h3><ul><li><span class="mono">git diff</span> <span data-ko="변경 확인" data-en="inspect changes">변경 확인</span></li><li><span class="mono">git status</span> <span data-ko="변경 파일 확인" data-en="changed files">변경 파일 확인</span></li><li data-ko="커밋 전 리뷰" data-en="review before commit">커밋 전 리뷰</li></ul></section>
+        <section class="card"><h3 data-ko="좋은 입력" data-en="Good Inputs">좋은 입력</h3><ul><li data-ko="범위" data-en="scope">범위</li><li data-ko="목표" data-en="goal">목표</li><li data-ko="검증" data-en="validation">검증</li><li data-ko="기대 출력" data-en="expected output">기대 출력</li></ul></section>
+        <section class="card"><h3 data-ko="피할 것" data-en="Avoid">피할 것</h3><ul><li data-ko="너무 크고 모호한 작업" data-en="huge vague tasks">너무 크고 모호한 작업</li><li data-ko="검증 없음" data-en="no validation">검증 없음</li><li data-ko="검토 없는 커밋/푸시" data-en="blind commit / push">검토 없는 커밋/푸시</li></ul></section>
+        <section class="card"><h3 data-ko="빠른 명령" data-en="Quick Commands">빠른 명령</h3><ul><li><span class="mono">codex exec "summarize diff"</span></li><li><span class="mono">codex exec "fix failing tests"</span></li><li><span class="mono">codex exec "draft PR summary"</span></li></ul></section>
+        <section class="card"><h3 data-ko="작업 형태" data-en="Task Shape">작업 형태</h3><ul><li data-ko="작은 리팩터링" data-en="small refactor">작은 리팩터링</li><li data-ko="버그 수정" data-en="bug fix">버그 수정</li><li data-ko="로그 기반 조사" data-en="log-based investigation">로그 기반 조사</li><li data-ko="요약 초안" data-en="summary draft">요약 초안</li></ul></section>
+        <section class="card"><h3 data-ko="한 줄 요약" data-en="One Line">한 줄 요약</h3><ul><li data-ko="Codex는 shortcut보다 실행 패턴과 검증 루프를 같이 보는 쪽이 실제 사용에 더 유리함" data-en="Codex works better when execution patterns and validation loops are considered together, not shortcuts alone.">Codex는 shortcut보다 실행 패턴과 검증 루프를 같이 보는 쪽이 실제 사용에 더 유리함</li></ul></section>
+      </section><footer class="page-footer"><span data-ko="Codex 실행 요약 시트" data-en="Codex execution quick sheet">Codex 실행 요약 시트</span><span data-ko="A4 세로 인쇄" data-en="Print on A4 portrait">A4 세로 인쇄</span></footer></article>
+    </main><script src="./assets/app.js"></script></body></html>

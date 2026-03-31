@@ -1,69 +1,22 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemini Code Quick Sheet</title>
-    <meta name="description" content="Gemini Code에서 빠르게 참고할 수 있게 최소 조작과 요청 패턴만 A4 한 장으로 정리한 출력용 시트." />
-    <link rel="stylesheet" href="./assets/styles.css" />
-  </head>
+<html lang="ko" data-lang="ko">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Gemini Code Quick Sheet</title><meta name="description" content="Gemini Code에서 빠르게 참고할 수 있게 최소 조작과 요청 패턴만 A4 한 장으로 정리한 출력용 시트." /><link rel="stylesheet" href="./assets/styles.css" /></head>
   <body>
-    <header class="site-header container screen-only">
-      <div class="topbar">
-        <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
-        <nav class="nav">
-          <a href="./index.html">홈</a>
-          <a href="./combined.html">통합 출력</a>
-          <a href="./claude-code.html">Claude Code</a>
-          <a href="./codex.html">Codex</a>
-          <a class="active" href="./gemini-code.html">Gemini Code</a>
-        </nav>
-      </div>
-    </header>
-    <main class="print-page-wrap container">
-      <div class="print-toolbar screen-only">
-        <div>
-          <h1>Gemini Code Quick Sheet</h1>
-          <p class="footer-note">공개적으로 확인 가능한 범위 안에서 최소 조작/요청 패턴만 남긴 A4 시트</p>
-        </div>
-        <div class="actions">
-          <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
-          <button class="button primary" data-print aria-label="Print this shortcut sheet">인쇄</button>
-          <a class="button secondary" href="./index.html">뒤로</a>
-        </div>
-      </div>
-
-      <article class="print-page">
-        <header class="page-header">
-          <div>
-            <span class="tool-chip gemini">Gemini</span>
-            <h2>Gemini Code Quick Sheet</h2>
-            <p>shortcut보다 요청 형식과 빠른 사용 패턴 위주로 압축</p>
-          </div>
-          <div class="small-note">v3 · A4 one-page</div>
-        </header>
-
-        <section class="cheat-grid">
-          <section class="card"><h3>Core</h3><ul><li><span class="mono">Enter</span> submit</li><li><span class="mono">Shift+Enter</span> newline</li><li><span class="mono">Ctrl/Cmd+C</span> interrupt if supported</li><li><span class="mono">Tab</span> completion when available</li></ul></section>
-          <section class="card"><h3>Prompt Shape</h3><ul><li>goal</li><li>scope</li><li>format</li><li>validation</li></ul></section>
-          <section class="card"><h3>Useful Requests</h3><ul><li>summarize code path</li><li>draft plan</li><li>review diff</li><li>turn notes into checklist</li></ul></section>
-          <section class="card"><h3>Output Shape</h3><ul><li>3 risks</li><li>step-by-step plan</li><li>validation checklist</li><li>5-line summary</li></ul></section>
-          <section class="card"><h3>Strong Areas</h3><ul><li>summary</li><li>plan</li><li>review</li><li>structured draft</li></ul></section>
-          <section class="card"><h3>Input Order</h3><ul><li>files</li><li>logs</li><li>constraints</li><li>question</li></ul></section>
-          <section class="card"><h3>Review Flow</h3><ul><li>summarize first</li><li>plan second</li><li>checklist third</li><li>human approval last</li></ul></section>
-          <section class="card"><h3>Keep Short</h3><ul><li>one target per prompt</li><li>one output format</li><li>one validation rule</li></ul></section>
-          <section class="card"><h3>Avoid</h3><ul><li>long unstructured context</li><li>no output format</li><li>no review step</li></ul></section>
-          <section class="card"><h3>Mobile</h3><ul><li>read in short blocks</li><li>use compact outputs</li><li>prefer bullet summaries</li></ul></section>
-          <section class="card"><h3>Quick Phrases</h3><ul><li>summarize this</li><li>draft a plan</li><li>review risks</li><li>make checklist</li></ul></section>
-          <section class="card"><h3>One Line</h3><ul><li>Gemini Code는 keyboard shortcut보다 요청 형식과 출력 구조를 짧게 고정하는 쪽이 실제로 더 중요함</li></ul></section>
-        </section>
-
-        <footer class="page-footer">
-          <span>Gemini quick request sheet</span>
-          <span>Print on A4 portrait</span>
-        </footer>
-      </article>
-    </main>
-    <script src="./assets/app.js"></script>
-  </body>
-</html>
+    <header class="site-header container screen-only"><div class="topbar"><a class="brand" href="./index.html">AI Code Shortcuts Print</a><nav class="nav"><a href="./index.html" data-ko="홈" data-en="Home">홈</a><a href="./combined.html" data-ko="통합 출력" data-en="Print Pack">통합 출력</a><a href="./claude-code.html">Claude Code</a><a href="./codex.html">Codex</a><a class="active" href="./gemini-code.html">Gemini Code</a><a href="./qwen-code.html">Qwen Code</a></nav><div class="lang-switch"><button class="lang-button active" data-lang="ko">KO</button><button class="lang-button" data-lang="en">EN</button></div></div></header>
+    <main class="print-page-wrap container"><div class="print-toolbar screen-only"><div><h1 data-ko="Gemini Code 요약 시트" data-en="Gemini Code Quick Sheet">Gemini Code 요약 시트</h1><p class="footer-note" data-ko="공개적으로 확인 가능한 범위 안에서 최소 조작/요청 패턴만 남긴 A4 시트" data-en="An A4 sheet that keeps only minimal interaction and prompt patterns from what is publicly verifiable.">공개적으로 확인 가능한 범위 안에서 최소 조작/요청 패턴만 남긴 A4 시트</p></div><div class="toolbar-meta actions"><button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button><button class="button primary" data-print data-ko="인쇄" data-en="Print">인쇄</button><a class="button secondary" href="./index.html" data-ko="뒤로" data-en="Back">뒤로</a></div></div>
+      <article class="print-page"><header class="page-header"><div><span class="tool-chip gemini">Gemini</span><h2 data-ko="Gemini Code 요약 시트" data-en="Gemini Code Quick Sheet">Gemini Code 요약 시트</h2><p data-ko="단축키보다 요청 형식과 빠른 사용 패턴 위주로 압축" data-en="Focused more on prompt structure and fast usage patterns than on shortcuts.">단축키보다 요청 형식과 빠른 사용 패턴 위주로 압축</p></div><div class="small-note">v4 · A4 one-page</div></header>
+      <section class="cheat-grid">
+        <section class="card"><h3 data-ko="핵심" data-en="Core">핵심</h3><ul><li><span class="mono">Enter</span> <span data-ko="전송" data-en="submit">전송</span></li><li><span class="mono">Shift+Enter</span> <span data-ko="줄바꿈" data-en="newline">줄바꿈</span></li><li><span class="mono">Ctrl/Cmd+C</span> <span data-ko="지원 시 중단" data-en="interrupt if supported">지원 시 중단</span></li><li><span class="mono">Tab</span> <span data-ko="가능할 때 완성" data-en="completion when available">가능할 때 완성</span></li></ul></section>
+        <section class="card"><h3 data-ko="프롬프트 구조" data-en="Prompt Shape">프롬프트 구조</h3><ul><li data-ko="목표" data-en="goal">목표</li><li data-ko="범위" data-en="scope">범위</li><li data-ko="형식" data-en="format">형식</li><li data-ko="검증" data-en="validation">검증</li></ul></section>
+        <section class="card"><h3 data-ko="유용한 요청" data-en="Useful Requests">유용한 요청</h3><ul><li data-ko="코드 경로 요약" data-en="summarize code path">코드 경로 요약</li><li data-ko="계획 초안" data-en="draft plan">계획 초안</li><li data-ko="diff 리뷰" data-en="review diff">diff 리뷰</li><li data-ko="메모를 체크리스트로 변환" data-en="turn notes into checklist">메모를 체크리스트로 변환</li></ul></section>
+        <section class="card"><h3 data-ko="출력 형식" data-en="Output Shape">출력 형식</h3><ul><li data-ko="위험 3개" data-en="3 risks">위험 3개</li><li data-ko="단계별 계획" data-en="step-by-step plan">단계별 계획</li><li data-ko="검증 체크리스트" data-en="validation checklist">검증 체크리스트</li><li data-ko="5줄 요약" data-en="5-line summary">5줄 요약</li></ul></section>
+        <section class="card"><h3 data-ko="강한 영역" data-en="Strong Areas">강한 영역</h3><ul><li data-ko="요약" data-en="summary">요약</li><li data-ko="계획" data-en="plan">계획</li><li data-ko="리뷰" data-en="review">리뷰</li><li data-ko="구조화 초안" data-en="structured draft">구조화 초안</li></ul></section>
+        <section class="card"><h3 data-ko="입력 순서" data-en="Input Order">입력 순서</h3><ul><li data-ko="파일" data-en="files">파일</li><li data-ko="로그" data-en="logs">로그</li><li data-ko="제약" data-en="constraints">제약</li><li data-ko="질문" data-en="question">질문</li></ul></section>
+        <section class="card"><h3 data-ko="리뷰 흐름" data-en="Review Flow">리뷰 흐름</h3><ul><li data-ko="먼저 요약" data-en="summarize first">먼저 요약</li><li data-ko="그다음 계획" data-en="plan second">그다음 계획</li><li data-ko="그다음 체크리스트" data-en="checklist third">그다음 체크리스트</li><li data-ko="마지막에 사람 승인" data-en="human approval last">마지막에 사람 승인</li></ul></section>
+        <section class="card"><h3 data-ko="짧게 유지" data-en="Keep Short">짧게 유지</h3><ul><li data-ko="프롬프트당 하나의 대상" data-en="one target per prompt">프롬프트당 하나의 대상</li><li data-ko="하나의 출력 형식" data-en="one output format">하나의 출력 형식</li><li data-ko="하나의 검증 규칙" data-en="one validation rule">하나의 검증 규칙</li></ul></section>
+        <section class="card"><h3 data-ko="피할 것" data-en="Avoid">피할 것</h3><ul><li data-ko="길고 비구조적인 맥락" data-en="long unstructured context">길고 비구조적인 맥락</li><li data-ko="출력 형식 없음" data-en="no output format">출력 형식 없음</li><li data-ko="리뷰 단계 없음" data-en="no review step">리뷰 단계 없음</li></ul></section>
+        <section class="card"><h3 data-ko="모바일" data-en="Mobile">모바일</h3><ul><li data-ko="짧은 블록으로 읽기" data-en="read in short blocks">짧은 블록으로 읽기</li><li data-ko="압축된 출력 사용" data-en="use compact outputs">압축된 출력 사용</li><li data-ko="불릿 요약 선호" data-en="prefer bullet summaries">불릿 요약 선호</li></ul></section>
+        <section class="card"><h3 data-ko="빠른 문구" data-en="Quick Phrases">빠른 문구</h3><ul><li data-ko="이걸 요약해줘" data-en="summarize this">이걸 요약해줘</li><li data-ko="계획 초안 작성" data-en="draft a plan">계획 초안 작성</li><li data-ko="리스크 리뷰" data-en="review risks">리스크 리뷰</li><li data-ko="체크리스트 만들기" data-en="make checklist">체크리스트 만들기</li></ul></section>
+        <section class="card"><h3 data-ko="한 줄 요약" data-en="One Line">한 줄 요약</h3><ul><li data-ko="Gemini Code는 keyboard shortcut보다 요청 형식과 출력 구조를 짧게 고정하는 쪽이 실제로 더 중요함" data-en="For Gemini Code, fixing the request shape and output structure is more important than shortcut density.">Gemini Code는 keyboard shortcut보다 요청 형식과 출력 구조를 짧게 고정하는 쪽이 실제로 더 중요함</li></ul></section>
+      </section><footer class="page-footer"><span data-ko="Gemini 요청 요약 시트" data-en="Gemini request quick sheet">Gemini 요청 요약 시트</span><span data-ko="A4 세로 인쇄" data-en="Print on A4 portrait">A4 세로 인쇄</span></footer></article>
+    </main><script src="./assets/app.js"></script></body></html>
