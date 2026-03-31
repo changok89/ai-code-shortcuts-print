@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harness Engineering A4 Summary</title>
+    <meta name="description" content="Claude Code, Codex, Gemini Code, Qwen Code를 하네스 엔지니어링 관점으로 A4 한 장에 비교한 요약 시트." />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header container screen-only">
+      <div class="topbar">
+        <a class="brand" href="./index.html">AI Code Shortcuts Print</a>
+        <nav class="nav">
+          <a href="./index.html">홈</a>
+          <a href="./combined.html">통합 출력</a>
+          <a href="./claude-code.html">Claude Code</a>
+          <a href="./codex.html">Codex</a>
+          <a href="./gemini-code.html">Gemini Code</a>
+          <a href="./qwen-code.html">Qwen Code</a>
+          <a class="active" href="./harness-engineering.html">Harness</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="print-page-wrap container">
+      <div class="print-toolbar screen-only">
+        <div>
+          <h1>Harness Engineering Summary</h1>
+          <p class="footer-note">Claude / Codex / Gemini / Qwen를 하네스 엔지니어링 관점으로 A4 한 장 비교</p>
+        </div>
+        <div class="actions">
+          <button class="button secondary" data-theme-toggle aria-pressed="false">흑백으로 보기</button>
+          <button class="button primary" data-print aria-label="Print this summary sheet">인쇄</button>
+          <a class="button secondary" href="./index.html">뒤로</a>
+        </div>
+      </div>
+
+      <article class="print-page harness-sheet">
+        <header class="page-header">
+          <div>
+            <span class="tool-chip claude">Harness Engineering</span>
+            <h2>AI Coding CLI Comparison</h2>
+            <p>모델 비교가 아니라 역할 / 입력 / 검증 / 실패 처리 구조 비교</p>
+          </div>
+          <div class="small-note">v1 · A4 one-page</div>
+        </header>
+
+        <section class="matrix-table">
+          <div class="matrix-row matrix-head">
+            <div>CLI</div>
+            <div>핵심 성격</div>
+            <div>하네스 핵심</div>
+            <div>잘 맡길 역할</div>
+            <div>주의점</div>
+          </div>
+          <div class="matrix-row">
+            <div><span class="tool-chip claude">Claude</span></div>
+            <div>긴 문맥, 계획, 리뷰, 작업 분배</div>
+            <div>rules / skills / role separation</div>
+            <div>메인 허브, 계획, 장기 작업, 리뷰</div>
+            <div>한 세션에 역할을 너무 많이 몰아넣기 쉬움</div>
+          </div>
+          <div class="matrix-row">
+            <div><span class="tool-chip codex">Codex</span></div>
+            <div>작업 단위 실행, 수정, 검증 루프</div>
+            <div>task framing / repo isolation / validation</div>
+            <div>구현, 버그 수정, 작은 리팩터링</div>
+            <div>검증 없는 자동 실행은 품질이 흔들림</div>
+          </div>
+          <div class="matrix-row">
+            <div><span class="tool-chip gemini">Gemini</span></div>
+            <div>요약, 계획, 리뷰, 구조화 출력</div>
+            <div>input restructuring / fixed output</div>
+            <div>요약, 계획서, 리뷰 체크리스트</div>
+            <div>긴 맥락을 그대로 넣으면 장점이 줄어듦</div>
+          </div>
+          <div class="matrix-row">
+            <div><span class="tool-chip codex">Qwen</span></div>
+            <div>CLI 반복, 입력/완성, 짧은 왕복</div>
+            <div>prompt shape / history / completion flow</div>
+            <div>탐색 보조, 빠른 반복, 간단 정리</div>
+            <div>shortcut보다 입력 흐름 최적화가 더 중요함</div>
+          </div>
+        </section>
+
+        <section class="cheat-grid harness-grid">
+          <section class="card"><h3>Claude Code</h3><ul><li>메인 허브로 두기 좋음</li><li>계획 → 실행 → 리뷰 분리</li><li>룰/스킬 파일이 품질 유지에 중요</li><li>장기 문맥 운영에 강함</li></ul></section>
+          <section class="card"><h3>Codex</h3><ul><li>작업 범위를 짧고 선명하게</li><li>repo / branch / worktree 격리</li><li>테스트/린트 검증 루프 필수</li><li>실패 시 요약 보고 구조 필요</li></ul></section>
+          <section class="card"><h3>Gemini Code</h3><ul><li>입력을 파일/로그/제약/질문 순으로 정리</li><li>출력 형식을 먼저 고정</li><li>실행기보다 정리기 역할이 잘 맞음</li><li>계획/요약/리뷰 초안에 강함</li></ul></section>
+          <section class="card"><h3>Qwen Code</h3><ul><li>짧은 반복형 CLI 흐름에 유리</li><li>history / completion 활용도가 큼</li><li>짧은 템플릿 프롬프트가 잘 맞음</li><li>입력 루프 최적화가 핵심</li></ul></section>
+          <section class="card"><h3>공통 원칙</h3><ul><li>모델보다 역할 배치가 중요</li><li>검증 없는 자동화는 금방 흔들림</li><li>반복 작업은 스킬로 고정</li><li>사람 승인 단계를 남겨두기</li></ul></section>
+          <section class="card"><h3>추천 조합</h3><ul><li>Claude: 허브</li><li>Codex: 구현</li><li>Gemini: 요약/계획</li><li>Qwen: 빠른 반복</li></ul></section>
+          <section class="card"><h3>입력 설계</h3><ul><li>scope</li><li>goal</li><li>validation</li><li>output format</li></ul></section>
+          <section class="card"><h3>실패 설계</h3><ul><li>언제 멈출지</li><li>무엇을 보고할지</li><li>어디서 재시작할지</li><li>누가 승인할지</li></ul></section>
+        </section>
+
+        <footer class="page-footer">
+          <span>Harness engineering quick sheet</span>
+          <span>Print on A4 portrait</span>
+        </footer>
+      </article>
+    </main>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

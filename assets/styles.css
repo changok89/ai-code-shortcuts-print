@@ -197,4 +197,17 @@ h3 { font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.02em; }
   .card li, .page-header p, .page-footer, .small-note, .sheet-subtitle { font-size: 0.68rem; line-height: 1.22; }
   .cheat-grid { gap: 4px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .tool-chip { border: 1px solid rgba(0,0,0,0.16); }
+  .matrix-row > div { font-size: 0.62rem; padding: 5px; }
+}
+
+ctions, .nav, .footer-note, .screen-only { display: none !important; }
+  .print-page-wrap { padding: 0; }
+  .print-page { width: 100%; box-shadow: none; border-radius: 0; margin: 0; padding: 3mm 2mm 2mm; }
+  .combined-stack { gap: 6mm; }
+  h2 { font-size: 1.05rem; }
+  h3 { font-size: 0.74rem; }
+  .card { padding: 6px; }
+  .card li, .page-header p, .page-footer, .small-note, .sheet-subtitle { font-size: 0.68rem; line-height: 1.22; }
+  .cheat-grid { gap: 4px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tool-chip { border: 1px solid rgba(0,0,0,0.16); }
 }
